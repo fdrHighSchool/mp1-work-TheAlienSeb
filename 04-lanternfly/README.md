@@ -1,7 +1,7 @@
 # Lanternfly
 
 
-## Key Takeaways:
+## Key Takeaways: How to use if statements, and collecting integer inputs
 
 
-## Lingering Questions:
+## Lingering Questions: None

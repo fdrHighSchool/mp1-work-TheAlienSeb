@@ -1,7 +1,7 @@
 # Favorite Movie
 
 
-## Key Takeaways:
+## Key Takeaways: Using Systen.out.print
 
 
-## Lingering Questions:
+## Lingering Questions: None

@@ -1,7 +1,7 @@
 # Rocketship
 
 
-## Key Takeaways:
+## Key Takeaways: How to use classes
 
 
-## Lingering Questions:
+## Lingering Questions: None
