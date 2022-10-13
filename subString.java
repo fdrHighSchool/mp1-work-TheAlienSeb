@@ -17,11 +17,11 @@ public class subString {
         System.out.println("Enter your favorite number:");
         String favNumber = s.nextLine();
 
-       if (role.equals("Teacher") || role.equals("teacher")) {
+       if (role.equalsIgnoreCase("teacher")) {
         role = "@schools.nyc.gov";
         System.out.println("Your email is: ");
         System.out.println(initialize(firstName) + lastName + favNumber + role);
-       } else if (role.equals("Student") || role.equals("student")) {
+       } else if (role.equalsIgnoreCase("student")) {
         role = "@nycstudents.net";
         System.out.println("Your email is: ");
         System.out.println(firstName + initialize(lastName) + favNumber + role);
