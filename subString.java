@@ -7,7 +7,7 @@ public class subString {
 
        
        String us = nameUser();
-       String pw = genPass();
+       String pw = genPass(8);
 
 
        System.out.println("Your username is: " + us);
@@ -57,12 +57,28 @@ public class subString {
 
 
  }
+ public static String genPass(int length){
+  String password = "";
+  int max= 122;
+  int min= 65;
+  for(int i = 0; i < length; i++) {
+  int random = (int)(Math.random() * (max - min + 1) + min);
+
+  char c = (char)random;
+
+  password += c;
+
+  }
+  
+return password;
+
+} 
 
 
 
 
 
- public static String genPass(){
+  /* public static String genPass(){
        Scanner z = new Scanner(System.in);
 
        System.out.println("Lets do your password now!");
@@ -98,7 +114,7 @@ public class subString {
       z.close();
 
       return passWord;
- }
+ }  */
 
 
 public static String initialize(String n) {
