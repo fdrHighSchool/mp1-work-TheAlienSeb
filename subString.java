@@ -3,15 +3,23 @@ import java.util.Scanner;
 
 
 public class subString {
+  static Scanner n = new Scanner(System.in);
     public static void main(String[] args){
 
-       
+      
        String us = nameUser();
-       String pw = genPass(8);
+       
+
+        
+       System.out.println("Choose how long you want your password to be");
+       int howLong = n.nextInt();
+       String pw = genPass(howLong);
 
 
        System.out.println("Your username is: " + us);
        System.out.println("Your password is: " + pw);
+
+       n.close();
 
       }
 
@@ -25,18 +33,18 @@ public class subString {
 
  String userName = "";
 
-  Scanner s = new Scanner(System.in);
+  // Scanner s = new Scanner(System.in);
   System.out.println("Are you a Teacher or a Student?");
-  String role = s.nextLine(); 
+  String role = n.nextLine(); 
 
   System.out.println("Enter your first name:");
-  String firstName = s.nextLine();
+  String firstName = n.nextLine();
 
   System.out.println("Enter your last name:");
-  String lastName = s.nextLine();
+  String lastName = n.nextLine();
 
   System.out.println("Enter your favorite number:");
-  String favNumber = s.nextLine();
+  String favNumber = n.nextLine();
 
  if (role.equalsIgnoreCase("teacher")) {
   role = "@schools.nyc.gov";
@@ -52,7 +60,8 @@ public class subString {
  } else {
   System.out.println("If you are a teacher, type Teacher. If you are a student, type Student");
  }
- s.close();
+
+//  s.close();
  return userName;
 
 
